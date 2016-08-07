@@ -127,8 +127,11 @@ run_analysis <- function(){
                    arrange(subject, activity)
   ##---------------------------------------------------------------##
   
-  ##write tidy data onto a text file
+  ##Write the tidy data onto a text file
   write.table(averaged_data, "wearable.txt", row.names = FALSE, quote = FALSE)
+  
+  ##Output the tidy data as instructed
+  averaged_data
   
   ##End of script##
                   
